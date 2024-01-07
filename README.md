@@ -8,7 +8,7 @@ If you encounter an error, feel free to make either a pull request or an issue (
 ## Compiling
 I made this in codeblocks with the following parameters, but I'm unsure on how it would build on other programs:
 
-`-Wall -s -O3 -static -Og -Wall -Wunreachable-code -mwindows -lShlwapi -lpsapi -lpthread `
+`-Wall -s -O3 -Wunreachable-code -mwindows -lShlwapi -lpsapi -lpthread `
 
 ## Other Rich Presence Applications
 I wanted to make my own version of the other already-available applications that have done better than I probably could.
