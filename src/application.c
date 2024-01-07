@@ -18,7 +18,7 @@ bool ApplicationWantsToExit = false;
 
 ServerInfo ServerNames[SERVERSIZE] = {
   {"Skyrat", "byond://skyrat13.space:22094", true},
-  {"/tg/Station", "https://tgstation13.org/", false},
+  {"/tg/Station", "https://tgstation13.org/", false}, //TODO: make aliases, this server name has a space in the middle before it initializes
   {"Hyper Station", "byond://172.93.98.2:8058", true},
   {"Paradise Station", "byond://byond.paradisestation.org:6666", true},
   {"Bubberstation", "byond://46.4.35.160:3000", true},
@@ -29,7 +29,7 @@ ServerInfo ServerNames[SERVERSIZE] = {
   {"Aurora Station", "byond://136.243.0.189:1234", true},
   {"Citadel Station", "byond://ss13.citadel-station.net:44150", true},
   {"Burgerstation", "byond://64.20.37.50:1234", false},
-  {"Outpost R505", "1byond://92.223.27.168:4000", true},
+  {"Outpost R505", "byond://92.223.27.168:4000", true},
   {"CM-SS13", "byond://51.222.10.115:1400", false}
 };
 
