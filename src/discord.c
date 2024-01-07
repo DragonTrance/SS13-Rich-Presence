@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <pthread.h>
+#include <inttypes.h>
 #include "discord.h"
 #include "application.h"
 
@@ -32,6 +33,8 @@ enum EDiscordResult CreateDiscordInstance(struct Application* restrict app)
 
   app->ActivityManager = app->DiscordCore->get_activity_manager(app->DiscordCore);
   app->RichPresence.supported_platforms = PlatformRoleDesktop;
+  //Icon of the application itself
+  sprintf(app->RichPresence.assets.large_image, "https://cdn.discordapp.com/app-icons/%" PRId64 "/f69a19614d9cb6616ff69d6324f66c82.png", DiscordID);
 
   memcpy(&app->LastPresence, &app->RichPresence, sizeof(struct DiscordActivity));
   return DiscordResult_Ok;
